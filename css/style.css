@@ -869,6 +869,17 @@ button {
   z-index: 2;
 }
 
+.project-ipads--app .ipad-camera,
+.project-ipads--app .ipad-home-bar {
+  display: none;
+}
+
+.project-ipads--app .ipad-screen img {
+  height: calc(100% + 16px);
+  object-position: top center;
+  transform: translateY(-6px);
+}
+
 .ipad-mockup {
   position: relative;
   flex-shrink: 0;
