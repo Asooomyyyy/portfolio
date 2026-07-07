@@ -845,55 +845,82 @@ button {
   min-height: auto;
 }
 
-/* ---- iPad Air Mockup ---- */
-.ipad-mockup {
+/* ---- iPad Pro / Air Mockup (Modern) ---- */
+.project-ipads {
   position: relative;
   z-index: 1;
   display: flex;
+  align-items: flex-end;
   justify-content: center;
-  filter: drop-shadow(0 28px 48px rgba(0, 0, 0, 0.15));
+  gap: 2rem;
+  max-width: 560px;
+  margin: 0 auto;
+  padding-bottom: 1.75rem;
+  filter: drop-shadow(0 28px 48px rgba(0, 0, 0, 0.14));
+}
+
+.project-ipads .ipad-mockup--back {
+  transform: rotate(-4deg);
+  z-index: 1;
+}
+
+.project-ipads .ipad-mockup--front {
+  transform: rotate(4deg);
+  z-index: 2;
+}
+
+.ipad-mockup {
+  position: relative;
+  flex-shrink: 0;
 }
 
 .ipad-frame {
   position: relative;
-  width: clamp(220px, 28vw, 300px);
-  padding: 14px;
-  border-radius: 28px;
-  background: linear-gradient(145deg, #e4e4e6 0%, #a1a1a6 50%, #c8c8cc 100%);
-  border: 2px solid #8e8e93;
+  width: 228px;
+  padding: 5px;
+  border-radius: 22px;
+  background: linear-gradient(160deg, #e8e8ed 0%, #b8b8be 45%, #d1d1d6 100%);
+  border: 1px solid #9a9aa0;
   box-shadow:
-    inset 0 2px 0 rgba(255, 255, 255, 0.55),
-    inset 0 -2px 0 rgba(0, 0, 0, 0.08);
+    inset 0 1px 0 rgba(255, 255, 255, 0.7),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.06),
+    0 24px 48px rgba(0, 0, 0, 0.12);
 }
 
-.ipad-bezel {
+.ipad-inner {
   position: relative;
-  padding: 18px 14px 16px;
   border-radius: 18px;
-  background: #0a0a0a;
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+  overflow: hidden;
+  background: #000;
 }
 
 .ipad-camera {
   position: absolute;
-  top: 8px;
+  top: 10px;
   left: 50%;
   transform: translateX(-50%);
-  width: 8px;
-  height: 8px;
+  width: 6px;
+  height: 6px;
   border-radius: 50%;
-  background: #1c1c1e;
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
-  z-index: 2;
+  background: #1a1a1c;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+  z-index: 3;
 }
 
 .ipad-screen {
   position: relative;
   width: 100%;
   aspect-ratio: 3 / 4;
-  border-radius: 6px;
   overflow: hidden;
   background: var(--bg);
+}
+
+.ipad-screen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
 }
 
 .ipad-screen--empty {
@@ -902,51 +929,42 @@ button {
 
 .ipad-home-bar {
   position: absolute;
-  bottom: 10px;
+  bottom: 8px;
   left: 50%;
   transform: translateX(-50%);
-  width: 100px;
+  width: 90px;
   height: 4px;
   border-radius: 4px;
-  background: rgba(0, 0, 0, 0.15);
+  background: rgba(0, 0, 0, 0.18);
   z-index: 2;
 }
 
 .ipad-btn {
   position: absolute;
-  background: #888;
+  background: #7c7c82;
   border-radius: 2px;
   z-index: 0;
 }
 
 .ipad-btn--power {
-  top: 72px;
-  right: -3px;
+  top: 64px;
+  right: -2px;
   width: 3px;
-  height: 36px;
+  height: 40px;
 }
 
-.ipad-btn--vol {
-  top: 120px;
-  right: -3px;
+.ipad-btn--vol-up {
+  top: 108px;
+  right: -2px;
   width: 3px;
-  height: 56px;
+  height: 28px;
 }
 
-.ipad-badge {
-  position: absolute;
-  bottom: -16px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-family: var(--font-mono);
-  font-size: 0.6rem;
-  letter-spacing: 0.04em;
-  color: var(--white);
-  background: #2a2a2a;
-  padding: 0.35rem 0.75rem;
-  border-radius: 6px;
-  white-space: nowrap;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+.ipad-btn--vol-down {
+  top: 144px;
+  right: -2px;
+  width: 3px;
+  height: 28px;
 }
 
 .project-category {
@@ -1365,6 +1383,30 @@ button {
 
   .project-phones--triple .phone-mockup--right {
     transform: rotate(3deg) translateY(4px);
+  }
+
+  .project-ipads {
+    gap: 1.25rem;
+    max-width: 100%;
+    padding-bottom: 1.5rem;
+  }
+
+  .ipad-frame {
+    width: 196px;
+    border-radius: 20px;
+    padding: 4px;
+  }
+
+  .ipad-inner {
+    border-radius: 16px;
+  }
+
+  .project-ipads .ipad-mockup--back {
+    transform: rotate(-3deg);
+  }
+
+  .project-ipads .ipad-mockup--front {
+    transform: rotate(3deg);
   }
 
   .project-macs {
