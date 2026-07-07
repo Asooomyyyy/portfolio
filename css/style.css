@@ -469,7 +469,7 @@ button {
 
 .project-card--web .project-info {
   position: relative;
-  transform: translateX(6rem);
+  transform: translateX(12rem);
   padding-left: 0;
 }
 
