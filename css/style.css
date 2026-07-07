@@ -464,12 +464,14 @@ button {
 }
 
 .project-card--web {
-  gap: 2rem;
+  gap: 2.5rem;
 }
 
 .project-card--web .project-info {
   position: relative;
-  transform: translateX(12rem);
+  z-index: 2;
+  margin-left: 10rem;
+  transform: none;
   padding-left: 0;
 }
 
@@ -1210,6 +1212,7 @@ button {
   }
 
   .project-card--web .project-info {
+    margin-left: 0;
     transform: none;
   }
 
