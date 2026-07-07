@@ -483,30 +483,29 @@ button {
 }
 
 /* ---- Phone Mockups ---- */
-.phones-duo {
+.project-phones {
   position: relative;
+  z-index: 1;
   display: flex;
-  justify-content: center;
   align-items: center;
-  min-height: 420px;
-  margin: 0 auto 5rem;
+  justify-content: center;
+  min-height: 540px;
+}
+
+.project-phones .phone-mockup--back {
+  transform: rotate(-9deg) translateX(28px);
+  z-index: 1;
+}
+
+.project-phones .phone-mockup--front {
+  transform: rotate(6deg) translateX(-28px);
+  margin-left: -56px;
+  z-index: 2;
 }
 
 .phone-mockup {
   position: relative;
-  z-index: 1;
   flex-shrink: 0;
-}
-
-.phone-mockup--back {
-  transform: rotate(-10deg) translateX(40px);
-  z-index: 1;
-}
-
-.phone-mockup--front {
-  transform: rotate(6deg) translateX(-40px);
-  z-index: 2;
-  margin-left: -60px;
 }
 
 .phone-frame {
@@ -633,8 +632,163 @@ button {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-.project-visual .phone-mockup {
+.project-visual .project-phones {
   filter: drop-shadow(0 30px 50px rgba(0, 0, 0, 0.12));
+}
+
+/* ---- Mac Mockup ---- */
+.project-macs {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 340px;
+  filter: drop-shadow(0 32px 60px rgba(0, 0, 0, 0.12));
+}
+
+.project-macs .mac-mockup--back {
+  transform: rotate(-4deg) translateX(24px);
+  z-index: 1;
+  width: min(100%, 380px);
+}
+
+.project-macs .mac-mockup--front {
+  transform: rotate(3deg) translateX(-24px);
+  margin-left: -80px;
+  z-index: 2;
+  width: min(100%, 380px);
+}
+
+.mac-mockup {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.mac-lid {
+  padding: 10px 10px 0;
+  border-radius: 16px 16px 0 0;
+  background: linear-gradient(180deg, #d8d8d8 0%, #b8b8b8 100%);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+.mac-bezel {
+  position: relative;
+  padding: 14px 14px 10px;
+  border-radius: 10px 10px 0 0;
+  background: #0a0a0a;
+}
+
+.mac-camera {
+  position: absolute;
+  top: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #1a1a1a;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+  z-index: 2;
+}
+
+.mac-display {
+  border-radius: 6px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.mac-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.55rem 0.85rem;
+  background: #f3f3f3;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.mac-traffic {
+  display: flex;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+.mac-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.mac-dot--red { background: #ff5f57; }
+.mac-dot--yellow { background: #febc2e; }
+.mac-dot--green { background: #28c840; }
+
+.mac-url {
+  flex: 1;
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  color: var(--text-secondary);
+  text-align: center;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 0.3rem 0.75rem;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.mac-screen {
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background: #fff;
+}
+
+.mac-screen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+}
+
+.mac-base {
+  position: relative;
+  height: 14px;
+  margin: 0 auto;
+  width: 108%;
+  margin-left: -4%;
+  border-radius: 0 0 12px 12px;
+  background: linear-gradient(180deg, #c4c4c4 0%, #a8a8a8 100%);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.mac-hinge {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 18%;
+  height: 4px;
+  background: rgba(0, 0, 0, 0.12);
+  border-radius: 0 0 4px 4px;
+}
+
+.mac-badge {
+  position: absolute;
+  bottom: -18px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.04em;
+  color: var(--white);
+  background: #2a2a2a;
+  padding: 0.35rem 0.75rem;
+  border-radius: 6px;
+  white-space: nowrap;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.project-visual .mac-mockup {
+  min-height: auto;
 }
 
 .project-category {
@@ -980,18 +1134,39 @@ button {
     top: 10px;
   }
 
-  .phones-duo {
-    min-height: 340px;
-    margin-bottom: 3rem;
+  .project-phones {
+    min-height: 380px;
   }
 
-  .phone-mockup--back {
-    transform: rotate(-8deg) translateX(20px) scale(0.88);
+  .project-macs {
+    min-height: 280px;
   }
 
-  .phone-mockup--front {
-    transform: rotate(5deg) translateX(-20px) scale(0.92);
-    margin-left: -40px;
+  .project-macs .mac-mockup--back,
+  .project-macs .mac-mockup--front {
+    width: min(100%, 300px);
+  }
+
+  .project-macs .mac-mockup--back {
+    transform: rotate(-3deg) translateX(12px) scale(0.92);
+  }
+
+  .project-macs .mac-mockup--front {
+    transform: rotate(2deg) translateX(-12px) scale(0.95);
+    margin-left: -50px;
+  }
+
+  .mac-bezel {
+    padding: 10px 10px 8px;
+  }
+
+  .project-phones .phone-mockup--back {
+    transform: rotate(-7deg) translateX(14px) scale(0.88);
+  }
+
+  .project-phones .phone-mockup--front {
+    transform: rotate(5deg) translateX(-14px) scale(0.92);
+    margin-left: -36px;
   }
 
   .image-frame {
