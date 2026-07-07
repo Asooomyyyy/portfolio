@@ -525,10 +525,10 @@ button {
 
 .phone-frame {
   position: relative;
-  width: 210px;
-  height: 428px;
-  padding: 10px;
-  border-radius: 40px;
+  width: 188px;
+  height: 384px;
+  padding: 9px;
+  border-radius: 36px;
   background: linear-gradient(145deg, #3a3a3a 0%, #1a1a1a 45%, #2d2d2d 100%);
   box-shadow:
     0 40px 80px rgba(0, 0, 0, 0.18),
@@ -541,20 +541,20 @@ button {
   position: relative;
   width: 100%;
   height: 100%;
-  border-radius: 38px;
+  border-radius: 34px;
   overflow: hidden;
   background: #000;
 }
 
 .phone-island {
   position: absolute;
-  top: 12px;
+  top: 11px;
   left: 50%;
   transform: translateX(-50%);
-  width: 96px;
-  height: 28px;
+  width: 62px;
+  height: 20px;
   background: #0a0a0a;
-  border-radius: 20px;
+  border-radius: 14px;
   z-index: 3;
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.06);
 }
@@ -563,10 +563,10 @@ button {
   content: '';
   position: absolute;
   top: 50%;
-  right: 18px;
+  right: 11px;
   transform: translateY(-50%);
-  width: 10px;
-  height: 10px;
+  width: 7px;
+  height: 7px;
   border-radius: 50%;
   background: radial-gradient(circle, #1a2744 30%, #0a1020 70%);
 }
@@ -582,14 +582,15 @@ button {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: top center;
 }
 
 .phone-home-indicator {
   position: absolute;
-  bottom: 8px;
+  bottom: 7px;
   left: 50%;
   transform: translateX(-50%);
-  width: 120px;
+  width: 100px;
   height: 4px;
   border-radius: 4px;
   background: rgba(255, 255, 255, 0.85);
@@ -605,30 +606,30 @@ button {
 
 .phone-btn--silent {
   left: -2px;
-  top: 108px;
+  top: 96px;
   width: 3px;
-  height: 28px;
+  height: 24px;
 }
 
 .phone-btn--vol-up {
   left: -2px;
-  top: 152px;
+  top: 136px;
   width: 3px;
-  height: 48px;
+  height: 42px;
 }
 
 .phone-btn--vol-down {
   left: -2px;
-  top: 210px;
+  top: 188px;
   width: 3px;
-  height: 48px;
+  height: 42px;
 }
 
 .phone-btn--power {
   right: -2px;
-  top: 168px;
+  top: 150px;
   width: 3px;
-  height: 72px;
+  height: 64px;
 }
 
 .phone-badge {
@@ -650,6 +651,61 @@ button {
 .project-visual .project-phones {
   filter: drop-shadow(0 30px 50px rgba(0, 0, 0, 0.12));
 }
+
+/* ---- Triple Phone Layout (Msarai) ---- */
+.project-phones--triple {
+  gap: 1.5rem;
+  padding-bottom: 2rem;
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+.project-phones--triple .phone-frame {
+  width: 172px;
+  height: 352px;
+  padding: 8px;
+  border-radius: 34px;
+}
+
+.project-phones--triple .phone-inner {
+  border-radius: 32px;
+}
+
+.project-phones--triple .phone-island {
+  width: 56px;
+  height: 18px;
+  top: 10px;
+}
+
+.project-phones--triple .phone-island::after {
+  width: 6px;
+  height: 6px;
+  right: 10px;
+}
+
+.project-phones--triple .phone-home-indicator {
+  width: 92px;
+}
+
+.project-phones--triple .phone-mockup--left {
+  transform: rotate(-5deg) translateY(8px);
+  z-index: 1;
+}
+
+.project-phones--triple .phone-mockup--center {
+  transform: translateY(-14px) scale(1.05);
+  z-index: 3;
+}
+
+.project-phones--triple .phone-mockup--right {
+  transform: rotate(5deg) translateY(8px);
+  z-index: 2;
+}
+
+.project-phones--triple .phone-btn--silent { top: 88px; height: 22px; }
+.project-phones--triple .phone-btn--vol-up { top: 124px; height: 38px; }
+.project-phones--triple .phone-btn--vol-down { top: 172px; height: 38px; }
+.project-phones--triple .phone-btn--power { top: 138px; height: 58px; }
 
 /* ---- MacBook Mockup (Modern) ---- */
 .project-macs {
@@ -1222,43 +1278,37 @@ button {
     font-size: 6rem;
   }
 
-  .phone-frame {
-    width: 220px;
-    height: 450px;
-    border-radius: 40px;
-    padding: 8px;
-  }
-
-  .phone-inner {
-    border-radius: 34px;
-  }
-
-  .phone-island {
-    width: 78px;
-    height: 22px;
-    top: 10px;
-  }
-
   .project-phones {
     gap: 1.25rem;
     padding-bottom: 1.5rem;
   }
 
   .phone-frame {
-    width: 180px;
-    height: 368px;
-    border-radius: 34px;
-    padding: 8px;
+    width: 162px;
+    height: 330px;
+    border-radius: 32px;
+    padding: 7px;
   }
 
   .phone-inner {
-    border-radius: 28px;
+    border-radius: 26px;
   }
 
   .phone-island {
-    width: 68px;
-    height: 20px;
-    top: 10px;
+    width: 54px;
+    height: 17px;
+    top: 9px;
+    border-radius: 12px;
+  }
+
+  .phone-island::after {
+    width: 6px;
+    height: 6px;
+    right: 9px;
+  }
+
+  .phone-home-indicator {
+    width: 86px;
   }
 
   .project-phones .phone-mockup--back {
@@ -1268,6 +1318,39 @@ button {
   .project-phones .phone-mockup--front {
     transform: rotate(2deg);
     margin-left: 0;
+  }
+
+  .project-phones--triple {
+    gap: 0.85rem;
+    max-width: 100%;
+    overflow-x: auto;
+    justify-content: flex-start;
+    padding: 0 0.5rem 1.5rem;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .project-phones--triple .phone-frame {
+    width: 148px;
+    height: 302px;
+    border-radius: 30px;
+  }
+
+  .project-phones--triple .phone-mockup {
+    scroll-snap-align: center;
+    flex-shrink: 0;
+  }
+
+  .project-phones--triple .phone-mockup--left {
+    transform: rotate(-3deg) translateY(4px);
+  }
+
+  .project-phones--triple .phone-mockup--center {
+    transform: translateY(-8px) scale(1.03);
+  }
+
+  .project-phones--triple .phone-mockup--right {
+    transform: rotate(3deg) translateY(4px);
   }
 
   .project-macs {
