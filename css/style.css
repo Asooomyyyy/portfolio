@@ -500,19 +500,21 @@ button {
   position: relative;
   z-index: 1;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
-  min-height: 540px;
+  gap: 2rem;
+  min-height: auto;
+  padding-bottom: 1.75rem;
 }
 
 .project-phones .phone-mockup--back {
-  transform: rotate(-9deg) translateX(28px);
+  transform: rotate(-3deg);
   z-index: 1;
 }
 
 .project-phones .phone-mockup--front {
-  transform: rotate(6deg) translateX(-28px);
-  margin-left: -56px;
+  transform: rotate(3deg);
+  margin-left: 0;
   z-index: 2;
 }
 
@@ -523,10 +525,10 @@ button {
 
 .phone-frame {
   position: relative;
-  width: 260px;
-  height: 530px;
+  width: 210px;
+  height: 428px;
   padding: 10px;
-  border-radius: 46px;
+  border-radius: 40px;
   background: linear-gradient(145deg, #3a3a3a 0%, #1a1a1a 45%, #2d2d2d 100%);
   box-shadow:
     0 40px 80px rgba(0, 0, 0, 0.18),
@@ -1238,7 +1240,34 @@ button {
   }
 
   .project-phones {
-    min-height: 380px;
+    gap: 1.25rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .phone-frame {
+    width: 180px;
+    height: 368px;
+    border-radius: 34px;
+    padding: 8px;
+  }
+
+  .phone-inner {
+    border-radius: 28px;
+  }
+
+  .phone-island {
+    width: 68px;
+    height: 20px;
+    top: 10px;
+  }
+
+  .project-phones .phone-mockup--back {
+    transform: rotate(-2deg);
+  }
+
+  .project-phones .phone-mockup--front {
+    transform: rotate(2deg);
+    margin-left: 0;
   }
 
   .project-macs {
@@ -1256,15 +1285,6 @@ button {
     width: 74%;
     margin-left: -34%;
     transform: rotate(3deg);
-  }
-
-  .project-phones .phone-mockup--back {
-    transform: rotate(-7deg) translateX(14px) scale(0.88);
-  }
-
-  .project-phones .phone-mockup--front {
-    transform: rotate(5deg) translateX(-14px) scale(0.92);
-    margin-left: -36px;
   }
 
   .image-frame {
