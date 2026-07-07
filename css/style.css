@@ -644,12 +644,24 @@ button {
   filter: drop-shadow(0 30px 50px rgba(0, 0, 0, 0.12));
 }
 
+/* ---- Real App Screenshots (2 phones) ---- */
+.project-phones--app .phone-island,
+.project-phones--app .phone-home-indicator {
+  display: none;
+}
+
+.project-phones--app .phone-screen img {
+  height: calc(100% + 20px);
+  object-position: top center;
+  transform: translateY(-10px);
+}
+
 /* ---- Triple Phone Layout (Msarai) ---- */
 .project-phones--triple {
   gap: 1.5rem;
   padding-bottom: 2rem;
   max-width: 620px;
-  margin: 0 auto;
+  margin: -1rem auto 0;
 }
 
 .project-phones--triple .phone-frame {
@@ -674,20 +686,21 @@ button {
 .project-phones--triple .phone-screen img {
   height: calc(100% + 20px);
   object-position: top center;
+  transform: translateY(-10px);
 }
 
 .project-phones--triple .phone-mockup--left {
-  transform: rotate(-5deg) translateY(8px);
+  transform: rotate(-5deg) translateY(-2px);
   z-index: 1;
 }
 
 .project-phones--triple .phone-mockup--center {
-  transform: translateY(-14px) scale(1.05);
+  transform: translateY(-22px) scale(1.05);
   z-index: 3;
 }
 
 .project-phones--triple .phone-mockup--right {
-  transform: rotate(5deg) translateY(8px);
+  transform: rotate(5deg) translateY(-2px);
   z-index: 2;
 }
 
