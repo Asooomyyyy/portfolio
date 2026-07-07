@@ -463,8 +463,13 @@ button {
   direction: ltr;
 }
 
+.project-card--web {
+  gap: 2rem;
+}
+
 .project-card--web .project-info {
-  margin-left: -4rem;
+  position: relative;
+  transform: translateX(-8rem);
   padding-left: 0;
 }
 
@@ -1205,7 +1210,7 @@ button {
   }
 
   .project-card--web .project-info {
-    margin-left: 0;
+    transform: none;
   }
 
   .project-number {
