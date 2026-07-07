@@ -646,26 +646,26 @@ button {
   align-items: flex-end;
   justify-content: center;
   width: 100%;
-  max-width: 420px;
-  min-height: 220px;
+  max-width: 360px;
+  min-height: 200px;
   margin: 0 auto;
-  padding: 0 0 1.75rem;
+  padding: 0 0 1.5rem;
 }
 
 .project-macs .mac-mockup--back {
-  transform: rotate(-4deg);
+  transform: rotate(-5deg);
   transform-origin: center bottom;
   z-index: 1;
-  width: 68%;
+  width: 58%;
   flex-shrink: 0;
 }
 
 .project-macs .mac-mockup--front {
-  transform: rotate(3deg);
+  transform: rotate(4deg);
   transform-origin: center bottom;
-  margin-left: -30%;
+  margin-left: -26%;
   z-index: 2;
-  width: 68%;
+  width: 58%;
   flex-shrink: 0;
 }
 
@@ -718,14 +718,14 @@ button {
   border-radius: 6px;
   overflow: hidden;
   background: #fff;
+  padding: 8px 10px 10px;
 }
 
 .macbook-screen img {
-  position: absolute;
-  inset: 0;
+  position: relative;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   object-position: top left;
   display: block;
 }
@@ -1226,19 +1226,19 @@ button {
 
   .project-macs {
     max-width: 100%;
-    min-height: 200px;
-    padding-bottom: 1.25rem;
+    min-height: 180px;
+    padding-bottom: 1rem;
   }
 
   .project-macs .mac-mockup--back {
-    width: 64%;
-    transform: rotate(-3deg);
+    width: 56%;
+    transform: rotate(-4deg);
   }
 
   .project-macs .mac-mockup--front {
-    width: 64%;
-    margin-left: -28%;
-    transform: rotate(2deg);
+    width: 56%;
+    margin-left: -24%;
+    transform: rotate(3deg);
   }
 
   .project-phones .phone-mockup--back {
