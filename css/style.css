@@ -718,7 +718,7 @@ button {
   border-radius: 6px;
   overflow: hidden;
   background: #fff;
-  padding: 6px 8px 8px;
+  padding: 18px 14px 12px;
 }
 
 .macbook-screen img {
@@ -728,6 +728,8 @@ button {
   object-fit: contain;
   object-position: top center;
   display: block;
+  transform: scale(0.78);
+  transform-origin: top center;
 }
 
 /* Slim aluminum base */
