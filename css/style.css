@@ -718,15 +718,16 @@ button {
   border-radius: 6px;
   overflow: hidden;
   background: #fff;
+  padding: 6px 8px 8px;
 }
 
 .macbook-screen img {
-  position: absolute;
-  inset: 0;
+  position: relative;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   object-position: top center;
+  display: block;
 }
 
 /* Slim aluminum base */
