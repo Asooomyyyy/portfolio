@@ -641,104 +641,72 @@ button {
   position: relative;
   z-index: 1;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
-  min-height: 340px;
-  filter: drop-shadow(0 32px 60px rgba(0, 0, 0, 0.12));
+  min-height: 400px;
+  padding: 1rem 0 2rem;
 }
 
 .project-macs .mac-mockup--back {
-  transform: rotate(-4deg) translateX(24px);
+  transform: rotate(-5deg) translateX(30px);
   z-index: 1;
-  width: min(100%, 380px);
+  width: min(100%, 440px);
 }
 
 .project-macs .mac-mockup--front {
-  transform: rotate(3deg) translateX(-24px);
-  margin-left: -80px;
+  transform: rotate(4deg) translateX(-30px);
+  margin-left: -100px;
   z-index: 2;
-  width: min(100%, 380px);
+  width: min(100%, 440px);
 }
 
 .mac-mockup {
   position: relative;
   flex-shrink: 0;
+  filter: drop-shadow(0 28px 50px rgba(0, 0, 0, 0.2));
 }
 
-.mac-lid {
-  padding: 10px 10px 0;
-  border-radius: 16px 16px 0 0;
-  background: linear-gradient(180deg, #d8d8d8 0%, #b8b8b8 100%);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5);
+/* Silver lid / screen housing */
+.mac-top {
+  padding: 20px 20px 14px;
+  border-radius: 22px 22px 0 0;
+  background: linear-gradient(165deg, #ececec 0%, #b0b0b0 45%, #d4d4d4 100%);
+  border: 1px solid rgba(0, 0, 0, 0.18);
+  box-shadow:
+    inset 0 2px 0 rgba(255, 255, 255, 0.55),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.08);
 }
 
+/* Black screen bezel */
 .mac-bezel {
   position: relative;
-  padding: 14px 14px 10px;
-  border-radius: 10px 10px 0 0;
-  background: #0a0a0a;
+  padding: 28px 24px 22px;
+  border-radius: 14px 14px 0 0;
+  background: linear-gradient(180deg, #1a1a1a 0%, #0a0a0a 100%);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.06);
 }
 
 .mac-camera {
   position: absolute;
-  top: 6px;
+  top: 10px;
   left: 50%;
   transform: translateX(-50%);
-  width: 6px;
-  height: 6px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
-  background: #1a1a1a;
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+  background: #2a2a2a;
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.1),
+    0 0 0 2px rgba(0, 0, 0, 0.4);
   z-index: 2;
 }
 
-.mac-display {
-  border-radius: 6px;
-  overflow: hidden;
-  background: #fff;
-}
-
-.mac-toolbar {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  padding: 0.55rem 0.85rem;
-  background: #f3f3f3;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
-}
-
-.mac-traffic {
-  display: flex;
-  gap: 6px;
-  flex-shrink: 0;
-}
-
-.mac-dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-}
-
-.mac-dot--red { background: #ff5f57; }
-.mac-dot--yellow { background: #febc2e; }
-.mac-dot--green { background: #28c840; }
-
-.mac-url {
-  flex: 1;
-  font-family: var(--font-mono);
-  font-size: 0.62rem;
-  color: var(--text-secondary);
-  text-align: center;
-  background: rgba(255, 255, 255, 0.85);
-  padding: 0.3rem 0.75rem;
-  border-radius: 4px;
-  border: 1px solid rgba(0, 0, 0, 0.06);
-}
-
 .mac-screen {
-  aspect-ratio: 16 / 10;
+  border-radius: 4px;
   overflow: hidden;
   background: #fff;
+  aspect-ratio: 16 / 10;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15);
 }
 
 .mac-screen img {
@@ -749,15 +717,17 @@ button {
   display: block;
 }
 
-.mac-base {
+/* Keyboard deck */
+.mac-bottom {
   position: relative;
-  height: 14px;
-  margin: 0 auto;
-  width: 108%;
-  margin-left: -4%;
-  border-radius: 0 0 12px 12px;
-  background: linear-gradient(180deg, #c4c4c4 0%, #a8a8a8 100%);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  height: 26px;
+  width: 114%;
+  margin-left: -7%;
+  border-radius: 0 0 18px 18px;
+  background: linear-gradient(180deg, #c8c8c8 0%, #909090 55%, #a8a8a8 100%);
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-top: none;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
 }
 
 .mac-hinge {
@@ -765,15 +735,25 @@ button {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 18%;
-  height: 4px;
-  background: rgba(0, 0, 0, 0.12);
-  border-radius: 0 0 4px 4px;
+  width: 22%;
+  height: 5px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 6px 6px;
+}
+
+/* Front lip / trackpad area */
+.mac-foot {
+  width: 92%;
+  height: 8px;
+  margin: 0 auto;
+  border-radius: 0 0 10px 10px;
+  background: linear-gradient(180deg, #888 0%, #666 100%);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .mac-badge {
   position: absolute;
-  bottom: -18px;
+  bottom: -22px;
   left: 50%;
   transform: translateX(-50%);
   font-family: var(--font-mono);
@@ -1139,25 +1119,38 @@ button {
   }
 
   .project-macs {
-    min-height: 280px;
+    min-height: 320px;
+    padding-bottom: 1.5rem;
   }
 
   .project-macs .mac-mockup--back,
   .project-macs .mac-mockup--front {
-    width: min(100%, 300px);
+    width: min(100%, 320px);
   }
 
   .project-macs .mac-mockup--back {
-    transform: rotate(-3deg) translateX(12px) scale(0.92);
+    transform: rotate(-4deg) translateX(16px) scale(0.9);
   }
 
   .project-macs .mac-mockup--front {
-    transform: rotate(2deg) translateX(-12px) scale(0.95);
-    margin-left: -50px;
+    transform: rotate(3deg) translateX(-16px) scale(0.93);
+    margin-left: -60px;
+  }
+
+  .mac-top {
+    padding: 14px 14px 10px;
   }
 
   .mac-bezel {
-    padding: 10px 10px 8px;
+    padding: 20px 18px 16px;
+  }
+
+  .mac-bottom {
+    height: 20px;
+  }
+
+  .mac-foot {
+    height: 6px;
   }
 
   .project-phones .phone-mockup--back {
