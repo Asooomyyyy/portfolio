@@ -463,6 +463,24 @@ button {
   direction: ltr;
 }
 
+.project-card--web {
+  gap: 1.5rem;
+  grid-template-columns: 1.05fr 0.95fr;
+}
+
+.project-card--web .project-visual {
+  justify-content: flex-end;
+}
+
+.project-card--web .project-macs {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.project-card--web .project-info {
+  padding-left: 0;
+}
+
 .project-visual {
   position: relative;
   display: flex;
