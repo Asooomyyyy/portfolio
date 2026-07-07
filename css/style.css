@@ -577,6 +577,10 @@ button {
   object-position: top center;
 }
 
+.phone-screen--empty {
+  background: linear-gradient(180deg, #2a2a2e 0%, #1a1a1c 100%);
+}
+
 .phone-home-indicator {
   position: absolute;
   bottom: 7px;
