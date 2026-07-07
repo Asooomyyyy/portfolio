@@ -646,28 +646,26 @@ button {
   align-items: flex-end;
   justify-content: center;
   width: 100%;
-  max-width: 100%;
-  min-height: 380px;
+  max-width: 540px;
+  min-height: 280px;
   margin: 0 auto;
-  padding: 0 0 2.5rem;
+  padding: 0 0 2rem;
 }
 
 .project-macs .mac-mockup--back {
   transform: rotate(-4deg);
   transform-origin: center bottom;
   z-index: 1;
-  width: 100%;
-  max-width: 480px;
+  width: 76%;
   flex-shrink: 0;
 }
 
 .project-macs .mac-mockup--front {
   transform: rotate(3deg);
   transform-origin: center bottom;
-  margin-left: min(-220px, -46%);
+  margin-left: -34%;
   z-index: 2;
-  width: 100%;
-  max-width: 480px;
+  width: 76%;
   flex-shrink: 0;
 }
 
@@ -1227,22 +1225,19 @@ button {
   }
 
   .project-macs {
-    min-height: 300px;
-    padding-bottom: 2rem;
-  }
-
-  .project-macs .mac-mockup--back,
-  .project-macs .mac-mockup--front {
-    max-width: 360px;
-    width: 92%;
+    max-width: 100%;
+    min-height: 240px;
+    padding-bottom: 1.5rem;
   }
 
   .project-macs .mac-mockup--back {
+    width: 72%;
     transform: rotate(-3deg);
   }
 
   .project-macs .mac-mockup--front {
-    margin-left: -42%;
+    width: 72%;
+    margin-left: -32%;
     transform: rotate(2deg);
   }
 
