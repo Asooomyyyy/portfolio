@@ -1023,6 +1023,11 @@ button {
   box-shadow: 0 4px 10px rgba(232, 93, 51, 0.18);
 }
 
+.project-title-logo--mathly {
+  border-radius: 28%;
+  box-shadow: 0 4px 10px rgba(120, 100, 180, 0.2);
+}
+
 .project-desc {
   font-size: 0.9rem;
   color: var(--text-secondary);
