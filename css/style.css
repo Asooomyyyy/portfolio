@@ -1013,10 +1013,10 @@ button {
 }
 
 .project-title-logo {
-  width: 1.85rem;
-  max-width: 1.85rem;
+  width: 2.1rem;
+  max-width: 2.1rem;
   height: auto;
-  flex: 0 0 1.85rem;
+  flex: 0 0 2.1rem;
   border-radius: 22%;
   object-fit: contain;
   display: block;
