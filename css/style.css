@@ -646,8 +646,8 @@ button {
   align-items: flex-end;
   justify-content: center;
   width: 100%;
-  max-width: 500px;
-  min-height: 260px;
+  max-width: 580px;
+  min-height: 290px;
   margin: 0 auto;
   padding: 0 0 2rem;
 }
@@ -656,16 +656,16 @@ button {
   transform: rotate(-5deg);
   transform-origin: center bottom;
   z-index: 1;
-  width: 72%;
+  width: 78%;
   flex-shrink: 0;
 }
 
 .project-macs .mac-mockup--front {
   transform: rotate(4deg);
   transform-origin: center bottom;
-  margin-left: -34%;
+  margin-left: -36%;
   z-index: 2;
-  width: 72%;
+  width: 78%;
   flex-shrink: 0;
 }
 
@@ -1226,18 +1226,18 @@ button {
 
   .project-macs {
     max-width: 100%;
-    min-height: 230px;
+    min-height: 250px;
     padding-bottom: 1.5rem;
   }
 
   .project-macs .mac-mockup--back {
-    width: 70%;
+    width: 74%;
     transform: rotate(-4deg);
   }
 
   .project-macs .mac-mockup--front {
-    width: 70%;
-    margin-left: -32%;
+    width: 74%;
+    margin-left: -34%;
     transform: rotate(3deg);
   }
 
