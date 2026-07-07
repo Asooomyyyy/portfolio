@@ -671,6 +671,11 @@ button {
   display: none;
 }
 
+.project-phones--triple .phone-screen img {
+  height: calc(100% + 20px);
+  object-position: top center;
+}
+
 .project-phones--triple .phone-mockup--left {
   transform: rotate(-5deg) translateY(8px);
   z-index: 1;
