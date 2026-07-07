@@ -560,15 +560,7 @@ button {
 }
 
 .phone-island::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  right: 11px;
-  transform: translateY(-50%);
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: radial-gradient(circle, #1a2744 30%, #0a1020 70%);
+  display: none;
 }
 
 .phone-screen {
@@ -672,19 +664,11 @@ button {
 }
 
 .project-phones--triple .phone-island {
-  width: 56px;
-  height: 18px;
-  top: 10px;
-}
-
-.project-phones--triple .phone-island::after {
-  width: 6px;
-  height: 6px;
-  right: 10px;
+  display: none;
 }
 
 .project-phones--triple .phone-home-indicator {
-  width: 92px;
+  display: none;
 }
 
 .project-phones--triple .phone-mockup--left {
@@ -1299,12 +1283,6 @@ button {
     height: 17px;
     top: 9px;
     border-radius: 12px;
-  }
-
-  .phone-island::after {
-    width: 6px;
-    height: 6px;
-    right: 9px;
   }
 
   .phone-home-indicator {
